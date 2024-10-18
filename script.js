@@ -1,5 +1,5 @@
 (emailjs => {
-    emailjs.init('PP7wDMipqRo4AZCy_59ky');
+    emailjs.init('HAwR8wHBrT9taCCkC');
 })(emailjs);
 
 document.querySelector('.contact__form').addEventListener('submit', function(event) {
