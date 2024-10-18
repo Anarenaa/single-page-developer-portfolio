@@ -1,3 +1,7 @@
+(emailjs => {
+    emailjs.init('PP7wDMipqRo4AZCy_59ky');
+})(emailjs);
+
 document.querySelector('.contact__form').addEventListener('submit', function(event) {
     event.preventDefault();
 
