@@ -180,17 +180,11 @@
             fill in the form, and I’ll get back to you as soon as possible.</p>
         </div>
 
-        <form class="contact__form uniForm">
+        <form class="contact__form">
 
-          <!-- Hidden Required Fields -->
-          <input type="hidden" name="project_name" value="Adamkeys Portfolio. Frontend Mentor">
-          <input type="hidden" name="admin_email" value="mika.akima.22@gmail.com">
-          <input type="hidden" name="form_subject" value="Possible clients">
-          <!-- END Hidden Required Fields -->
-
-          <input name="Name" class="contact__field" type="text" placeholder="Name" required>
-          <input name="Email" class="contact__field" type="email" placeholder="Email" required>
-          <textarea name="Message" class="contact__field" placeholder="Message" required></textarea>
+          <input name="name" class="contact__field" type="text" placeholder="Name" required>
+          <input name="email" class="contact__field" type="email" placeholder="Email" required>
+          <textarea name="message" class="contact__field" placeholder="Message" required></textarea>
           <div class="underline">
             <input class="contact__submit styled-link underline" type="submit" value="Send message">
           </div>
@@ -225,13 +219,6 @@
     </div>
   </footer>
 
-  <!-- 
-
-
-  
-
-  adamkeyes -->
-
   <script>
     const containers = document.querySelectorAll('.links-flex-container');
     const imgContainers = document.querySelectorAll('.project__img-container');
@@ -250,7 +237,7 @@
 
   </script>
 
-<script src="script.js"></script>
+<script src="script.js"></script> 
 </body>
 
 </html>
