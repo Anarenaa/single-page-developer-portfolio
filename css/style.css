@@ -92,7 +92,7 @@ section {
     color: var(--gray);
 }
 .styled-link {
-    display: inline;
+    display: inline-block;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2.3px;
@@ -101,6 +101,7 @@ section {
 .underline{
     position: relative;
     display: inline-block;
+    z-index: 10;
 }
 .underline::after {
     content: '';
@@ -242,7 +243,9 @@ section {
     height: 100px;
     overflow-y: hidden;
 }
-
+.contact__submit-wrapper{
+    float: right;
+}
 .contact__submit {
     background: transparent;
     cursor: pointer;
