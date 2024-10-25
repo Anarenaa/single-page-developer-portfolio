@@ -30,7 +30,6 @@ body{
 }
 .container {
     max-width: 1130px;
-    padding: 0 10px;
     margin: 0 auto;
     position: relative;
 }
@@ -38,17 +37,24 @@ section {
     margin-bottom: 150px;
 }
 
-.header__inner {
+.brand {
     display: flex;
     padding: 40px 0 0 0;
     justify-content: space-between;
 }
-.header__logo {
+.brand__logo {
     object-fit: contain;
 }
-.header-link {
-    display: table-cell;
-    padding-right: 32px;
+.brand-link {
+    display: inline-block;
+    margin-right: 32px;
+}
+path{
+    transition: all 0.3s ease;
+}
+#contact svg:hover path{
+    fill: var(--green);
+    transition: all 0.3s ease;
 }
 
 .introduction__decor-rings {
@@ -195,7 +201,7 @@ section {
     margin-bottom: 50px;
 }
 .project__img {
-    height: 400px;
+    width: 100%;
 }
 .project__lang {
     word-spacing: 18px;
