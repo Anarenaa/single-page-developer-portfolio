@@ -179,7 +179,7 @@ hr {
   margin-right: 30px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
   .project__img-container {
     position: relative;
     cursor: pointer;
