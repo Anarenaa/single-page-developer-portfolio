@@ -15,4 +15,5 @@
 .DS_Store
 .prettierignore
 
-form.js
+# .gitignore
+emailConfig.js

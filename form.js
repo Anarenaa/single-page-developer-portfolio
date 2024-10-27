@@ -1,5 +1,7 @@
+import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY } from './emailConfig.js';
+
 (emailjs => {
-    emailjs.init('HAwR8wHBrT9taCCkC');
+    emailjs.init(EMAILJS_PUBLIC_KEY);
 })(emailjs);
 
 document.querySelector('.contact__form').addEventListener('submit', function(event) {
@@ -8,7 +10,7 @@ document.querySelector('.contact__form').addEventListener('submit', function(eve
     let error = validation();
 
     if(error === 0) {
-        emailjs.sendForm('service_utzgb0p', 'template_ywslrtr', this)
+        emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this)
         .then(function() {
             const formFields = document.querySelectorAll('.contact__field');
             formFields.forEach(field => field.value = '');
