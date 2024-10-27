@@ -18,7 +18,7 @@
   <section class="introduction">
     <div class="container">
       <header class="brand">
-        <img class="brand__logo" src="./assets/images/adamkeyes.png" alt="adamkeyes-logo">
+        <img class="brand__logo" src="./assets/images/adamkeyes.svg" alt="adamkeyes-logo">
         <ul class="brand__links">
           <li class="brand-link">
             <a href="#">
@@ -101,6 +101,8 @@
         </li>
       </ul>
       <img class="experience__decor-rings" src="./assets/images/pattern-rings.svg">
+
+      <hr class="experience__mobile-hr">
     </div>
   </section>
 
@@ -229,7 +231,7 @@
       <hr>
 
       <div class="brand">
-        <img class="brand__logo" src="./assets/images/adamkeyes.png" alt="adamkeyes-logo">
+        <img class="brand__logo" src="./assets/images/adamkeyes.svg" alt="adamkeyes-logo">
         <ul class="brand__links">
           <li class="brand-link">
             <a href="#">
@@ -272,9 +274,11 @@
     const containers = document.querySelectorAll('.links-flex-container');
     const imgContainers = document.querySelectorAll('.project__img-container');
     let avatarImg = document.querySelector('.introduction__avatar');
+    let brandLogoElement = document.querySelector('.brand__logo');
 
     if (window.innerWidth >= 801) {
       avatarImg.src = "./assets/images/image-profile-desktop.webp";
+      brandLogoElement.scr = "./assets/images/adamkeyes.svg";
 
       imgContainers.forEach((imgContainer, index) => {
         const container = containers[index];
@@ -287,8 +291,16 @@
           container.style.display = 'none';
         });
       });
-    } else if (window.innerWidth <= 800) {
+    } else if (window.innerWidth <= 800 && window.innerWidth >= 657) {
       avatarImg.src = "./assets/images/image-profile-tablet.webp";
+      brandLogoElement.scr = "./assets/images/adamkeyes.svg";
+
+      document.querySelector('.introduction').style.height = '600px';
+      avatarImg.style.height = '600px';
+
+    } else {
+      avatarImg.src = "./assets/images/image-profile-mobile.webp";
+      brandLogoElement.scr = "./assets/images/adamkeyes_logo-mobile.svg";
     } 
   </script>
 
